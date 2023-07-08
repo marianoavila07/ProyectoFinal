@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* Inicio css */
+
+.header-inicio{
+    display: flex;
+    background-color: black;
+    align-items: center;
+}
+
+.figure-header{
+    padding: 20px;
+}
+
+.nav-header{
+    margin-left: auto;
+}
+
+.nav-header ul{
+    list-style: none;
+    font-size: 0;
+    padding-right: 110px;
+}
+
+.nav-header li{
+    display: inline-block;
+    position: relative;
+}
+
+.nav-header a{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    color: gray;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.nav-header a:hover{
+   border-bottom: gray solid 2px;
+   border-top: gray solid 2px;
+   font-size: 25px;
+}
+
+.section-main{
+    height: 1000px;
+    background-color: gray;
+    padding-top: 3em;
+}
+
+.article-main{
+    background-image: url(https://placehold.co/600x400);
+    opacity: 0.5;
+    background-position: center;
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-main{
+    position: absolute;
+    top: 55%;
+}
+
+.nav-main ul{
+    list-style: none;
+    padding: 8px;
+    border: black solid 2px;
+    background-color: gray;
+}
+
+.nav-main li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-main ul:hover{
+    font-size: 20px;
+}
+
+.footer-inicio{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    height: 20vh;
+}
+
+.nav-footer{
+    margin-left: auto;
+}
+
+.footer-inicio p{
+    color: gray;
+    font-size: 20px;
+    margin-left: 50%;
+}
+
+.nav-footer ul{
+    list-style: none;
+    font-size: 0;
+    padding-right: 110px;
+}
+
+
+.nav-footer a{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    color: gray;
+    text-decoration: none;
+    margin: 15px;
+}
+
+/* Galeria css */
+
+.section-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.article-galeria{
+    padding: 15px;
+    border: black solid 2px;
+    border-radius: 20px;
+    margin: 10px;
+    overflow:hidden
+}
+
+.article-galeria figcaption{
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+}
+
+/* Contacto css */
+
+.section-contacto{
+    height: 800px;
+}
+
+.article-form{
+    background-image: url(https://placehold.co/600x400);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.form-contacto{
+    background-color: lightgrey;
+    padding: 50px;
+}
+
+.section-form{
+    border: gray solid 3px;
+    padding: 20px;
+    margin: 5px;
+}
+
+.section-form label{
+    font-size: 20px;
+}
+
+.section-form input{
+    font-size: 15px;
+    border: 1px gray solid;
+    padding: 10px;
+}
+
+/* Bio css */
+
+.section-bio{
+    display: flex;
+}
+
+.article-bio{
+    width: 50%;
+    margin-right: 10px;
+}
+
+.article-bio p{
+    padding: 10px;
+}
+
+.article-bio2{
+    width: 50%;
+    margin-left: 10px;
+}
+
+.article-bio2 figure{
+    padding: 20px;
+}
+
