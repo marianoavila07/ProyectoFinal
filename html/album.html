@@ -3,46 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilo.css">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <title>Album</title>
 </head>
 <body>
     <header class="header-inicio">
         <figure class="figure-header">
-            <img src="https://placehold.co/250x100" alt="Logo de la pagina web">
+            <img src="/img/cropng.png" alt="Logo de la pagina web">
         </figure>
-
-        <nav class="nav-header">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../html/biografia.html">Biografia</a></li>
-                <li><a href="#">Album</a></li>
-                <li><a href="../html/galeria.html">Galeria</a></li>
-                <li><a href="../html/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
-    <main>
-        <section class="section-album">
-            <article class="article-iframe-album">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+        <section>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <section class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="biografia.html">Biografia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Album</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </section>     
+        </section> 
+    </nav>
+    <main class="main-inicio">
+        <section class="section-bio">
+            <article class="article-bio">
                 <iframe src="https://open.spotify.com/"></iframe>
             </article>
-            <article class="article-img-album">
+            <article class="article-bio">
                 <figure >
-                    <img src="https://placehold.co/600x400" alt="Logo del album">
+                    <img class="img-fluid" src="" alt="Logo del album">
                 </figure>
             </article>
         </section>
     </main>
     <footer class="footer-inicio">
-        <p>© Copyright</p>
+        <p class="p-footer">© Copyright</p>
         <nav class="nav-footer">
-            <ul>
-                <li><a href="https://www.youtube.com/" target="_blank">Spotify</a></li>
-                <li><a href="https://www.youtube.com/" target="_blank">Instagram</a></li>
-                <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+            <ul class="ul-main">
+                <li class="li-main">
+                    <a class="a-main" href="https://open.spotify.com/artist/4puAp107dCehraE47QXVQX?si=1yFSWNIoR96MEpBn8VxAgg" target="_blank">Spotify</a>
+                </li>
+                <li class="li-main">
+                    <a class="a-main" href="https://www.instagram.com/crocraxker/?hl=es-la" target="_blank">Instagram</a>
+                </li>
+                <li class="li-main">
+                    <a class="a-main" href="https://www.youtube.com/@C.R.O" target="_blank">Youtube</a>
+                </li>
             </ul>
         </nav>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
