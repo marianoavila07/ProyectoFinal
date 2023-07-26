@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.a-main-efecto:hover {
+  background-color: rgba(255, 255, 255, 0.5019607843);
+  color: black;
+  font-size: 15px;
+  transition: all 1s ease-out;
+}
+
+/* CSS 320PX */
+@media all and (min-width: 320px) {
+  .header-inicio {
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .figure-header img {
+    width: 50%;
+  }
+  .main-inicio {
+    height: 100vh;
+    height: 100%;
+    background-color: black;
+  }
+  .section-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1em;
+  }
+  .article-main {
+    height: 100%;
+    width: 90%;
+    background-image: url(/img/c-r-o-rock.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .li-main {
+    list-style: none;
+  }
+  .a-main {
+    text-decoration: none;
+    color: white;
+    font-weight: 1000;
+  }
+  .a-main-efecto {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-weight: 1000;
+    padding: 0.5em;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .li:hover {
+    background-color: black;
+  }
+  .footer-inicio {
+    text-align: center;
+    padding: 1em;
+    background-color: black;
+    height: 100%;
+  }
+  .p-footer {
+    color: white;
+    font-weight: 1000;
+  }
+  .color {
+    background-color: black;
+  }
+  .main-inicio h1 {
+    padding: 1em;
+    text-align: center;
+    color: white;
+  }
+  .article-bio p {
+    color: white;
+    text-align: center;
+    font-size: x-large;
+  }
+  .figc-galeria {
+    text-align: center;
+    padding: 1em;
+    color: white;
+  }
+  .article-form {
+    padding: 1em;
+  }
+  .section-contacto {
+    height: 100vh;
+  }
+  .article-img-bio {
+    text-align: center;
+  }
+  .padding-img {
+    margin: 2em;
+    border: white solid 2px;
+    box-shadow: 10px 10px white;
+  }
+}
+/* CSS 768PX */
+@media all and (min-width: 768px) {
+  .figure-header img {
+    width: 20%;
+  }
+  .article-img-bio img {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
