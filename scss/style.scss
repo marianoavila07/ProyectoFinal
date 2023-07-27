@@ -22,52 +22,50 @@ $color-letras: white;
         height: 100%;
     }
 
-    .figure-header img{
-        width: 50%;
-    }
-
     .main-inicio{
         height: 100vh;
         height: 100%;
         background-color: black;
-    }
 
-    .section-main{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        padding: 1em;
+        h1{
+            padding: 1em;
+            text-align: center;
+            color: $color-letras;
+    
+        }
+        
+        .section-main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 1em;
+        }
+         .article-main{
+            height: 100%;
+            width: 90%;
+            background-image: url(/img/c-r-o-rock.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav-main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
-
-    .article-main{
-        height: 100%;
-        width: 90%;
-        background-image: url(/img/c-r-o-rock.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .nav-main{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     .li-main{
         list-style: none; 
-        
-    }
-
-    .a-main{
-        text-decoration: none;
-        color: $color-letras;
-        font-weight: 1000;
-    }
+         .a-main{
+            text-decoration: none;
+            color: $color-letras;
+            font-weight: 1000;
+        }
+   }
 
     .a-main-efecto{
         text-decoration: none;
@@ -88,30 +86,25 @@ $color-letras: white;
         padding: 1em;
         background-color: black;
         height: 100%;
+
+        .p-footer{
+            color: $color-letras;
+            font-weight: 1000;
+        }
     }
 
-    .p-footer{
-        color: $color-letras;
-        font-weight: 1000;
+    .article-bio {
+        p{
+            color: $color-letras;
+            text-align: center;
+            font-size: x-large;
+        }
+
+        .article-img-bio{
+            text-align: center;
+         }
     }
-
-    .color{
-        background-color: black;
-    }
-
-    .main-inicio h1{
-        padding: 1em;
-        text-align: center;
-        color: $color-letras;
-
-    }
-
-    .article-bio p{
-        color: $color-letras;
-        text-align: center;
-        font-size: x-large;
-    }
-
+        
     .figc-galeria{
         text-align: center;
         padding: 1em;
@@ -126,23 +119,26 @@ $color-letras: white;
         height: 100vh;
     }
 
-    .article-img-bio{
-       text-align: center;
-    }
-
     .padding-img{
         border: $color-letras solid 2px;
         box-shadow: 10px 10px $color-letras;
+        margin: 2em;
     }
 }
 
 /* CSS 768PX */
 @media all and (min-width: 768px){
-    .figure-header img{
-        width: 20%;
+    .figure-header {
+        img{
+            width: 20%;
+        }
     }
+    
 
-    .article-img-bio img{
-        width: 50%;
-     }
+    .article-img-bio {
+        img{
+            width: 50%;
+        }
+    }
+    
 }

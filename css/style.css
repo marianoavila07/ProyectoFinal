@@ -19,22 +19,24 @@
     justify-content: center;
     height: 100%;
   }
-  .figure-header img {
-    width: 50%;
-  }
   .main-inicio {
     height: 100vh;
     height: 100%;
     background-color: black;
   }
-  .section-main {
+  .main-inicio h1 {
+    padding: 1em;
+    text-align: center;
+    color: white;
+  }
+  .main-inicio .section-main {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     padding: 1em;
   }
-  .article-main {
+  .main-inicio .article-main {
     height: 100%;
     width: 90%;
     background-image: url(/img/c-r-o-rock.jpg);
@@ -45,7 +47,7 @@
     justify-content: center;
     align-items: center;
   }
-  .nav-main {
+  .main-inicio .nav-main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +55,7 @@
   .li-main {
     list-style: none;
   }
-  .a-main {
+  .li-main .a-main {
     text-decoration: none;
     color: white;
     font-weight: 1000;
@@ -76,22 +78,17 @@
     background-color: black;
     height: 100%;
   }
-  .p-footer {
+  .footer-inicio .p-footer {
     color: white;
     font-weight: 1000;
-  }
-  .color {
-    background-color: black;
-  }
-  .main-inicio h1 {
-    padding: 1em;
-    text-align: center;
-    color: white;
   }
   .article-bio p {
     color: white;
     text-align: center;
     font-size: x-large;
+  }
+  .article-bio .article-img-bio {
+    text-align: center;
   }
   .figc-galeria {
     text-align: center;
@@ -104,13 +101,10 @@
   .section-contacto {
     height: 100vh;
   }
-  .article-img-bio {
-    text-align: center;
-  }
   .padding-img {
-    margin: 2em;
     border: white solid 2px;
     box-shadow: 10px 10px white;
+    margin: 2em;
   }
 }
 /* CSS 768PX */
