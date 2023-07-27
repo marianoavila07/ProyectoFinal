@@ -10,7 +10,9 @@
 <body>
     <header class="header-inicio">
         <figure class="figure-header">
-            <img src="/img/cropng.png" alt="Logo de la pagina web">
+            <a href="../index.html">
+                <img class="img-fluid tamano" src="/img/cropng.png" alt="Logo de la pagina web">
+            </a>
         </figure>
     </header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
@@ -27,7 +29,7 @@
                         <a class="nav-link" href="biografia.html">Biografia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="album.html">Album</a>
+                        <a class="nav-link" href="album.html">Albumes</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="galeria.html">Galeria</a>
@@ -41,16 +43,19 @@
     </nav>
     <main class="main-inicio">
         <section class="section-contacto">
-            <h1>Deja una opinion</h1>
+            <h1>Deja una opinión</h1>
             <article class="article-contacto">
                 <form class="container">
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label text-light">Email:</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
                       </div>
                       <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label text-light">Opinion</label>
+                        <label for="exampleFormControlTextarea1" class="form-label text-light">Opinión:</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                      </div>
+                      <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-outline-light" type="button">Enviar</button>
                       </div>
                   </form>
             </article>
