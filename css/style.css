@@ -9,6 +9,7 @@
   color: black;
   font-size: 15px;
   transition: all 1s ease-out;
+  transition-delay: 1ms;
 }
 
 /* CSS 320PX */

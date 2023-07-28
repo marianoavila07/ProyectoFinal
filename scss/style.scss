@@ -1,4 +1,4 @@
-$color-letras: white;
+@import 'colores';
 
 *{
     padding: 0;
@@ -8,15 +8,16 @@ $color-letras: white;
 
 .a-main-efecto:hover{
     background-color: #FFFFFF80;
-    color: black;
+    color: $color-negro;
     font-size: 15px;
     transition: all 1s ease-out;
+    transition-delay: 1ms;
 }
 
 /* CSS 320PX */
 @media all and (min-width: 320px){
     .header-inicio{
-        background-color: black;
+        background-color: $color-negro;
         text-align: center;
         justify-content: center;
         height: 100%;
@@ -25,7 +26,7 @@ $color-letras: white;
     .main-inicio{
         height: 100vh;
         height: 100%;
-        background-color: black;
+        background-color: $color-negro;
 
         h1{
             padding: 1em;
@@ -78,13 +79,13 @@ $color-letras: white;
     }
 
     .li:hover{
-        background-color: black;
+        background-color: $color-negro;
     }
 
     .footer-inicio{
         text-align: center;
         padding: 1em;
-        background-color: black;
+        background-color: $color-negro;
         height: 100%;
 
         .p-footer{
