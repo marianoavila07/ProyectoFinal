@@ -1,5 +1,6 @@
 
 @import 'colores';
+@import 'medidas';
 
 *{
     padding: 0;
@@ -18,7 +19,7 @@
 }
 
 .tamano-iframe{
-    width: 100%;
+    width: $altura-ancho-100;
     height: 352px;
 }
 
@@ -26,22 +27,22 @@
     background-color: $color-negro !important;
     
     .navbar-toggler{
-        background-color: white;
+        background-color: $color-blanco;
     }
     
     .nav-item{
     padding: 0.2em;
     margin: 0.5em;
-    border: 1px $color-letras solid;
+    border: 1px $color-blanco solid;
     text-align: center;
-    width: 100%;
-    height: 100%;
+    width: $altura-ancho-100;
+    height: $altura-ancho-100;
 
     .nav-link{
-    color: $color-letras !important;
+    color: $color-blanco !important;
 
         .active{
-            background-color: gray;
+            background-color: $color-gris;
             font-size: x-large;
             font-weight: 600;
             }
@@ -50,7 +51,7 @@
 }
 
 .nav-item:hover{
-    background-color: gray;
+    background-color: $color-gris;
     transition: all ease 0.4s;
     font-size: large;
     font-weight: 600;
@@ -60,22 +61,22 @@
         background-color: $color-negro;
         text-align: center;
         justify-content: center;
-        height: 100%;
+        height: $altura-ancho-100;
 
         .figure-header{
-            height: 100%;
+            height: $altura-ancho-100;
         }
     }
 
     .main-inicio{
         height: 100vh;
-        height: 100%;
+        height: $altura-ancho-100;
         background-color: $color-negro;
 
         h1{
             padding: 1em;
             text-align: center;
-            color: $color-letras;
+            color: $color-blanco;
     
         }
         
@@ -87,7 +88,7 @@
             padding: 1em;
         }
          .article-main{
-            height: 100%;
+            height: $altura-ancho-100;
             width: 90%;
             background-image: url(/img/c-r-o-rock.jpg);
             background-position: center;
@@ -107,18 +108,18 @@
         list-style: none; 
          .a-main{
             text-decoration: none;
-            color: $color-letras;
+            color: $color-blanco;
             font-weight: 1000;
         }
    }
 
     .a-main-efecto{
         text-decoration: none;
-        color: $color-letras;
+        color: $color-blanco;
         text-shadow: 2px 2px 4px #000000;
         font-weight: 1000;
         padding: 0.5em;
-        border: 2px solid $color-letras;
+        border: 2px solid $color-blanco;
         background-color: rgba(0, 0, 0, 0.5);
     }
 
@@ -130,17 +131,17 @@
         text-align: center;
         padding: 1em;
         background-color: $color-negro;
-        height: 100%;
+        height: $altura-ancho-100;
 
         .p-footer{
-            color: $color-letras;
+            color: $color-blanco;
             font-weight: 1000;
         }
     }
 
     .article-bio {
         .parrafo-bio{
-            color: $color-letras;
+            color: $color-blanco;
             text-align: center;
             font-size: x-large;
             margin: 0;
@@ -155,7 +156,7 @@
     .figc-galeria{
         text-align: center;
         padding: 1em;
-        color: $color-letras;
+        color: $color-blanco;
     }
 
     .article-form{
@@ -167,8 +168,8 @@
     }
 
     .padding-img{
-        border: $color-letras solid 2px;
-        box-shadow: 10px 10px $color-letras;
+        border: $color-blanco solid 2px;
+        box-shadow: 10px 10px $color-blanco;
         margin: 2em;
     }
 }
@@ -189,14 +190,14 @@
     }
 
     .nav-item:hover{
-        background-color: gray;
+        background-color: $color-gris;
         transition: all ease 0.4s;
         font-size: large;
         font-weight: 600;
     }
     
     .active{
-        background-color: gray;
+        background-color: $color-gris;
         font-weight: 600;
         font-size: medium;
     }
