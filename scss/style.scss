@@ -1,11 +1,10 @@
 
 @import 'colores';
 @import 'medidas';
+@import 'mixin';
 
 *{
-    padding: 0;
-    margin: 0;
-    border: 0;
+    @include reset-list
 }
 
 /* CSS 320PX */
