@@ -89,11 +89,7 @@
   }
   .li-main {
     list-style: none;
-  }
-  .li-main .a-main {
-    text-decoration: none;
-    color: white;
-    font-weight: 1000;
+    padding: 0.5em;
   }
   .a-main-efecto {
     text-decoration: none;
