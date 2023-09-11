@@ -1,0 +1,247 @@
+
+@import 'colores';
+@import 'medidas';
+@import 'mixin';
+
+*{
+    @include reset-list
+}
+
+/* CSS 320PX */
+@media all and (min-width: 320px){
+
+    .header-inicio{
+        background-color: $color-negro;
+        text-align: center;
+        justify-content: center;
+        height: $altura-ancho-100;
+    }
+
+/* NAV */
+.navbar-custom {
+    background-color: $color-negro !important;
+    .container-fluid{
+
+        .navbar-toggler{
+            background-color: $color-blanco;
+        }
+
+        .nav-center{
+            .navbar-nav{
+                .nav-item{
+                    padding: 0.2em;
+                    margin: 0.5em;
+                    border: 1px $color-blanco solid;
+                    text-align: center;
+                    width: $altura-ancho-100;
+                    height: $altura-ancho-100;
+
+                    &:hover{
+                        background-color: $color-gris;
+                        transition: all ease 0.4s;
+                        font-size: large;
+                        font-weight: 600;
+                    }
+
+                    .active{
+                        background-color: $color-gris;
+                        font-size: x-large;
+                        font-weight: 600;
+                    }
+                    .nav-link{
+                    color: $color-blanco !important;
+                    }
+                }
+            }
+        }
+    } 
+}
+/* NAV */
+
+/* MAIN */
+    .main-inicio{
+        height: 100vh;
+        height: $altura-ancho-100;
+        background-color: $color-negro;
+
+        h1{
+            padding: 1em;
+            text-align: center;
+            color: $color-blanco;
+    
+        }
+
+        .section-bio{
+            .article-bio {
+                .parrafo-bio{
+                    color: $color-blanco;
+                    text-align: center;
+                    font-size: x-large;
+                    margin: 0;
+                    padding: 1em;
+                }
+
+                .article-img-bio{
+                text-align: center;
+                }
+            }
+        }
+
+        .row{
+            .gal{
+                 .padding-img{
+                    border: $color-blanco solid 2px;
+                    box-shadow: 10px 10px $color-blanco;
+                    margin: 2em;
+                    
+                     .figc-galeria{
+                        text-align: center;
+                        padding: 1em;
+                        color: $color-blanco;
+                    }
+
+                    .tamano-iframe{
+                        width: $altura-ancho-100;
+                        height: 352px;
+                    }
+                }
+            }
+        }
+
+        .section-contacto{
+            height: 100vh;
+            
+            .article-contacto{
+                padding: 1em;
+            }
+        }
+        
+        .section-main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 1em;
+            
+            .article-main{
+                height: $altura-ancho-100;
+                width: 90%;
+                background-image: url(/img/c-r-o-rock.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            
+                .nav-main{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .ul-main{
+                        .li-main{
+                            list-style: none; 
+                            padding: 0.5em;
+
+                             .a-main-efecto{
+                                text-decoration: none;
+                                color: $color-blanco;
+                                text-shadow: 2px 2px 4px #000000;
+                                font-weight: 1000;
+                                padding: 0.5em;
+                                border: 2px solid $color-blanco;
+                                background-color: rgba(0, 0, 0, 0.5);
+                                
+                                &:hover{
+                                    background-color: #FFFFFF80;
+                                    color: $color-negro;
+                                    font-size: 20px;
+                                    transition: all 1s ease-out;
+                                    transition-delay: 1ms;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+    }
+/* MAIN */
+/* FOOTER */
+    .footer-inicio{
+        text-align: center;
+        padding: 1em;
+        background-color: $color-negro;
+        height: $altura-ancho-100;
+        .p-footer{
+            color: $color-blanco;
+            font-weight: 1000;
+        }
+        .nav-footer{
+            .ul-main{
+                .li-main-footer{
+                    margin: 1em;
+                }
+            }
+        }
+    }
+}
+/* FOOTER */   
+/* CSS 768PX */
+@media all and (min-width: 768px){
+
+    .container {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0.5em 0.5em;
+        grid-auto-flow: row;
+        align-items: stretch;
+        grid-template-areas:
+          "img1 img2 img2 img3"
+          "img4 img5 img5 img6"
+          ". . . .";
+      }
+      
+      .img1 { grid-area: img1; text-align: center; }
+      
+      .img2 { grid-area: img2; text-align: center;}
+      
+      .img3 { grid-area: img3; text-align: center;}
+      
+      .img4 { grid-area: img4; text-align: center;}
+      
+      .img5 { grid-area: img5; text-align: center;}
+      
+      .img6 { grid-area: img6; text-align: center;}
+      
+    
+    .article-img-bio {
+        img{
+            width: 50%;
+        }
+    }
+
+    .navbar-custom{
+        .container-fluid{
+            .nav-center{
+                justify-content: center;
+                text-align: center;
+
+                .nav-item{
+                    &:hover{
+                        background-color: $color-gris;
+                        transition: all ease 0.4s;
+                        font-size: large;
+                        font-weight: 600;
+                    }
+                }
+                .active{
+                    background-color: $color-gris;
+                    font-weight: 600;
+                    font-size: medium;
+                }
+            }
+        }
+    }   
+}
